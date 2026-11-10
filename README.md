@@ -32,13 +32,33 @@ O Pediline 2.0 evolui o [Pediline](#créditos), um SaaS de catálogo e delivery,
 
 ## Screenshots
 
-| App do garçom: salão | Lançamento de itens | Divisão de conta |
-|---|---|---|
-| _[print]_ | _[print]_ | _[print]_ |
+### App do garçom
 
-| Painel: mapa do salão | Tela da cozinha (KDS) | Caixa |
+| Salão em tempo real | Comanda da mesa | Lançamento de itens |
 |---|---|---|
-| _[print]_ | _[print]_ | _[print]_ |
+| <img src="docs/img/garcom-salao.png" width="240" alt="Salão no app do garçom"> | <img src="docs/img/garcom-comanda.png" width="240" alt="Comanda da Mesa 1"> | <img src="docs/img/garcom-lancar-itens.png" width="240" alt="Lançamento de itens com variação e borda"> |
+
+| Divisão igualitária | Divisão por item | Avisos |
+|---|---|---|
+| <img src="docs/img/garcom-divisao-igual.png" width="240" alt="Divisão igualitária da conta"> | <img src="docs/img/garcom-divisao-por-item.png" width="240" alt="Divisão da conta por item"> | <img src="docs/img/garcom-avisos.png" width="240" alt="Avisos de itens prontos e conta solicitada"> |
+
+### Painel do gestor
+
+**Tela da cozinha (KDS):** fila única com mesas e balcão; itens prontos riscados.
+
+![Tela da cozinha](docs/img/painel-cozinha-kds.jpg)
+
+| Mapa do salão | Comanda da mesa |
+|---|---|
+| ![Mapa do salão](docs/img/painel-mapa-salao.jpg) | ![Comanda da Mesa 1](docs/img/painel-comanda-mesa1.jpg) |
+
+| Venda de balcão | Histórico de operações |
+|---|---|
+| ![Cobrança no balcão](docs/img/painel-balcao-cobranca.jpg) | ![Histórico de operações](docs/img/painel-historico.jpg) |
+
+### Catálogo do consumidor
+
+![Catálogo da Pizzaria Bella Massa](docs/img/catalogo.jpg)
 
 ---
 
@@ -187,9 +207,11 @@ A primeira execução revelou dois gargalos, identificados com `pg_stat_statemen
 - **Capacidade de uma loja:** de 8x para **mais de 20x** a carga do pico, sem atingir o limite.
 - **Integridade:** 0% de erros e **nenhum registro perdido ou duplicado** em todas as rodadas.
 
+Rodada de limite no Grafana, na mesma escala. Antes das correções, o tempo de resposta sobe junto com as conexões esperando o banco; depois, fica próximo de zero durante toda a rodada.
+
 | Antes das correções | Depois das correções |
 |---|---|
-| _[gráfico do Grafana]_ | _[gráfico do Grafana]_ |
+| ![Rodada de limite antes das correções](docs/img/grafana-limite-antes.png) | ![Rodada de limite depois das correções](docs/img/grafana-limite-depois.png) |
 
 ## Infraestrutura
 

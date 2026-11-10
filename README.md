@@ -9,7 +9,7 @@
 
 https://github.com/user-attachments/assets/e81806af-8fa4-4ad9-a1a2-0c682dbedb6c
 
-> 🔒 O código-fonte é privado, porque o projeto está sendo preparado para virar produto. Este repositório documenta a arquitetura, as decisões técnicas e os resultados. O código pode ser apresentado em entrevista.
+> 🔒 O código-fonte é privado.
 
 ---
 

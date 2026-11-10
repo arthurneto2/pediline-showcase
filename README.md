@@ -3,8 +3,11 @@
 > Sistema SaaS multi-tenant para restaurantes que une **atendimento presencial** (mesas, balcão, caixa, cozinha) e **delivery** sobre a mesma base de pedidos, produtos, estoque e pagamentos.
 
 🔗 **Demo (catálogo de um estabelecimento fictício):** [pediline.store/pizzaria-bella-massa](https://pediline.store/pizzaria-bella-massa)
-🎥 **Vídeo do fluxo completo (garçom → cozinha → caixa):** _[adicionar link]_
 📄 **Monografia (TCC — UFV):** _[adicionar link]_
+
+### 🎥 Apresentação em vídeo
+
+https://github.com/user-attachments/assets/e81806af-8fa4-4ad9-a1a2-0c682dbedb6c
 
 > 🔒 O código-fonte é privado, porque o projeto está sendo preparado para virar produto. Este repositório documenta a arquitetura, as decisões técnicas e os resultados. O código pode ser apresentado em entrevista.
 
